@@ -5,8 +5,7 @@
 
 let noiseScale = 30
 let openSimplex
-const width = 800;
-const height = 800;
+
 
 function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
@@ -315,8 +314,11 @@ function matrixMultiply3D(lineVector, matrix){
 
 let obj;
 
+// const width = 800;
+// const height = 800;
+
 function setup() {
-	let canvas = createCanvas(width, height, WEBGL);
+	let canvas = createCanvas(0.75*windowWidth, 0.75*windowHeight, WEBGL);
 	canvas.parent('canvasEmbed');
 	resetSketch();
 	var button = createButton("Reset");
