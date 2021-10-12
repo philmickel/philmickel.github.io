@@ -321,12 +321,10 @@ function setup() {
 	let canvas = createCanvas(0.5*displayWidth, 0.5*displayHeight, WEBGL);
 	canvas.parent('canvasEmbed');
 	resetSketch();
-	var button = createButton("Reset");
-	button.mousePressed(resetSketch);
 };
 
 
-let FRAMES_UNTIL_LAG = 850;
+let FRAMES_UNTIL_LAG = 1000;
 
 function resetSketch() {
 	background(0);
