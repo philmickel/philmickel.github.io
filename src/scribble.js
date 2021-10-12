@@ -318,7 +318,7 @@ let obj;
 // const height = 800;
 
 function setup() {
-	let canvas = createCanvas(0.75*windowWidth, 0.75*windowHeight, WEBGL);
+	let canvas = createCanvas(0.5*displayWidth, 0.5*displayHeight, WEBGL);
 	canvas.parent('canvasEmbed');
 	resetSketch();
 	var button = createButton("Reset");
